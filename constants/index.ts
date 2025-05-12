@@ -23,3 +23,11 @@ export const FooterLinks = [
         ]
     },
 ]
+
+export const MobileLinks = [
+    {href:"Home", label: "/"},
+    {href: "Services", label:"/services"},
+    {href: "Gallery", label:"/gallery"},
+    {href: "Contact", label:"/contact-us"},
+    {href: "Appointment", label:"/appointment"},
+]

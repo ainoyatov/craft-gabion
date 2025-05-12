@@ -1,33 +1,33 @@
 export const NavLinks = [
-    {href:"Services", label:"/services"},
-    {href:"Gallery", label:"/gallery"},
-    {href:"About Us", label:"/about-us"},
-    {href:"Contact Us", label:"/contact-us"},
+    {href:"/services", label:"Services"},
+    {href:"/gallery", label:"Gallery"},
+    {href:"/about-us", label:"About"},
+    {href:"/contact-us", label:"Contact"},
 ]
 
 export const FooterLinks = [
     {
         title: "COMPANY",
         links: [
-            {href:"Services", label:"/services"},
-            {href:"Gallery", label:"/gallery"},
-            {href:"Prices", label:"/prices"},
+            {href:"/services", label:"Services"},
+            {href:"/gallery", label:"Gallery"},
+            {href:"/prices", label:"Prices"},
         ]
     },
     {
         title: "CONTACT",
         links: [
-            {href:"Appointment", label:"/appointment"},
-            {href:"FAQ", label:"/faq"},
-            {href:"Contact Us", label:"/contact-us"},
+            {href:"/appointment", label:"Appointment"},
+            {href:"/faq", label:"FAQ"},
+            {href:"/contact-us", label:"Contact"},
         ]
     },
 ]
 
 export const MobileLinks = [
-    {href:"Home", label: "/"},
-    {href: "Services", label:"/services"},
-    {href: "Gallery", label:"/gallery"},
-    {href: "Contact", label:"/contact-us"},
-    {href: "Appointment", label:"/appointment"},
+    {href:"/home", label: "Home"},
+    {href: "/services", label:"Services"},
+    {href: "/gallery", label:"Gallery"},
+    {href: "/contact-us", label:"Contact"},
+    {href: "/appointment", label:"Appointment"},
 ]

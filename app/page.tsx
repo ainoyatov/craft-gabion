@@ -3,7 +3,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen px-4 py-8 space-y-10 text-center">
       {/* Header */}
-      <header className="flex justify-between items-center text-sm">
+      {/* <header className="flex justify-between items-center text-sm">
         <h1 className="text-4xl font-bold">
           <span className="text-gray-900">CRAFT</span> <span className="text-gray-500">| Gabion</span>
           <div className="text-xs mt-1">Earth Elements. Talent. Time.</div>
@@ -14,7 +14,7 @@ export default function HomePage() {
           <a href="/about-us" className="hover:underline">About Us</a>
           <a href="/contact-us" className="hover:underline">Contact Us</a>
         </nav>
-      </header>
+      </header> */}
 
       {/* Hi Res Pano */}
       <div className="border rounded-lg py-10 text-lg font-medium">

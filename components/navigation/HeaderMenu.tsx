@@ -1,111 +1,106 @@
 'use client'
-
-import { NavLinks, MobileLinks, FooterLinks } from "@/constants";
-import Image from "next/image";
+import { NavLinks, MobileLinks } from "@/constants";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export default function HeaderMenu () {
-    const pathname = usePathname();
-    const [isMobile, setIsMobile] = useState(false);
 
-    const handleClickMobile = () => {
-        setIsMobile(() => !isMobile);
-    }
+export default function HeaderMenu() {
+
+    const pathname = usePathname();
+    const [isMobileOpen, setIsMobileOpen] = useState(false)
+
+    const toggleMobileMenu = () => setIsMobileOpen((prev) => !prev)
 
     return (
-        <div className="w-full">
-            <div className="mx-auto px-2 sm:px-6 lg:px-8">
-                <div className="relative flex items-center justify-between">
-                    {/* Desktop Menu */}
-                    <div className="flex flex-1 items-center justify-between">
-                        <a className="flex" href="/">
-                        <svg width="500" height="100" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
-                            <text x="0" y="35" className="text-4xl font-bold fill-gray-900">CRAFT</text>
-                            <text x="120" y="35" className="text-4xl font-bold fill-gray-500">| Gabion</text>
-                            <text x="0" y="60" className="text-xs mt-1 fill-gray-700">Earth Elements. Talent. Time.</text>
-                        </svg>
-                            {/* <Image 
-                                src="/gabion_logo.svg"
-                                alt="company logo"
-                                width={150}
-                                height={1}
-                                className="block"
-                            /> */}
-                        </a>
+        <header className="w-full border-b">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex h-16 items-center justify-between">
+            {/* Logo */}
+            <Link href="/" className="flex-shrink-0 flex items-center">
+                <svg
+                className="h-10 w-auto"
+                viewBox="0 0 500 100"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <text x="0" y="35" className="text-4xl font-bold fill-gray-900">
+                    CRAFT
+                </text>
+                <text x="120" y="35" className="text-4xl font-bold fill-gray-500">
+                    | Gabion
+                </text>
+                <text x="0" y="60" className="text-xs fill-gray-700">
+                    Earth Elements. Talent. Time.
+                </text>
+                </svg>
+            </Link>
 
-                        <div className="flex items-center">
-                            <div className="flex">
-                                <ul className="flex max-sm:hidden">
-                                    {NavLinks.map((links) => {
-                                        const isActive = pathname === links.href;
-                                        return(
-                                            <li
-                                                key={links.label}
-                                                className="px-2"
-                                            >
-                                                <Link
-                                                    href={links.href}
-                                                >
-                                                    {links.label}
-                                                </Link>
-                                            </li>
-                                        )
-                                    })
-                                    }
-                                    
-                                </ul>
-                            </div>
-                        </div>
+            {/* Desktop Navigation */}
+            <nav className="hidden sm:flex space-x-6 items-center">
+                {NavLinks.map((link: any) => (
+                <Link
+                    key={link.label}
+                    href={link.href}
+                    className={`text-sm font-medium ${
+                    pathname === link.href ? 'text-gray-900' : 'text-gray-500 hover:text-gray-800'
+                    }`}
+                >
+                    {link.label}
+                </Link>
+                ))}
+            </nav>
 
-                    </div>
-
-                    {/* Mobile Menu */}
-                    <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                        <button
-                            onClick={handleClickMobile}
-                            type="button"
-                            className="relative ml-1 inline-flex items-center justify-center border border-white rounded-md p-2 text-gray-900 dark:text-gray-200 action:bg-gray-200 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                        >
-                            {
-                                isMobile ? (
-                                    <div>
-                                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
-                                    </div>
-                                ) : (
-                                    <div>
-                                        <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                        </svg>
-                                    </div>
-                                )
-                            }
-                        </button>
-                    </div>
-
-                </div>
-
+            {/* Mobile Menu Button */}
+            <div className="sm:hidden">
+                <button
+                onClick={toggleMobileMenu}
+                type="button"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                >
+                {isMobileOpen ? (
+                    <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                ) : (
+                    <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    >
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                    </svg>
+                )}
+                </button>
             </div>
-
-            {isMobile ? (
-                <div>
-                    {MobileLinks.map((menu) => (
-                        <a
-                            key={menu.label}
-                            href={menu.href}
-                            className="block rounded-md p-2 text-base font-medium hover:bg-gray-300"
-                        >
-                            {menu.label}
-                        </a>
-                    ))}
-                </div>
-            ) : (
-                <div></div>
-            )}
-
+            </div>
         </div>
-    );
+
+        {/* Mobile Navigation */}
+        {isMobileOpen && (
+            <div className="sm:hidden px-4 pb-4">
+            {MobileLinks.map((menu: any) => (
+                <Link
+                key={menu.label}
+                href={menu.href}
+                className="block rounded-md py-2 px-3 text-base font-medium text-gray-700 hover:bg-gray-200"
+                >
+                {menu.label}
+                </Link>
+            ))}
+            </div>
+        )}
+        </header>
+    )
 }

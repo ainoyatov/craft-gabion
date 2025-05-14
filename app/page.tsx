@@ -68,10 +68,10 @@ export default function HomePage() {
       </div>
 
       {/* CTA */}
-      <div className="flex items-start gap-2 max-w-xl mx-auto text-left">
+      {/* <div className="flex items-start gap-2 max-w-xl mx-auto text-left">
         <input type="checkbox" checked readOnly className="mt-1" />
         <span className="text-gray-800 dark:text-gray-100">CTA Section:</span>
-      </div>
+      </div> */}
     </div>
   )
 }

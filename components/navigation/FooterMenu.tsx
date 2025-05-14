@@ -31,20 +31,24 @@ export default function Footer() {
             </div>
 
             {/* Logo on the Right */}
-            <div className="flex-shrink-0 mt-6 md:mt-0">
+            <div className="flex-shrink-0 mt-6 md:mt-0 max-w-sm overflow-hidden">
                 <Link href="/" className="flex items-center">
                     <svg
-                    className="h-20 w-auto" // Increased from h-10 to h-20
-                    viewBox="0 0 500 100"
-                    xmlns="http://www.w3.org/2000/svg"
+                        className="h-20 w-[300px] sm:w-[400px] md:w-[450px] max-w-full"
+                        viewBox="0 0 500 100"
+                        preserveAspectRatio="xMinYMid meet"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
-                    <text x="0" y="35" className="text-4xl font-bold fill-gray-900">
+                    <text x="0" y="35" className="text-4xl font-bold fill-gray-900 dark:fill-white">
                         CRAFT
                     </text>
-                    <text x="120" y="35" className="text-4xl font-bold fill-gray-500">
-                        | Gabion
+                    <text x="135" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-300">
+                        |
                     </text>
-                    <text x="0" y="60" className="text-xs fill-gray-700">
+                    <text x="150" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-300">
+                        Gabion
+                    </text>
+                    <text x="0" y="60" className="text-xs fill-gray-700 dark:fill-gray-400">
                         Earth Elements. Talent. Time.
                     </text>
                     </svg>

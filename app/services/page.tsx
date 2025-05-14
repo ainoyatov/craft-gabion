@@ -50,10 +50,10 @@ export default function ServicesPage() {
           className="mx-auto w-72 rounded shadow border border-gray-200 dark:border-gray-600"
         />
 
-        <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+        {/* <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-700 dark:text-gray-300">
           <input type="checkbox" checked readOnly className="accent-green-600" />
           <span>CTA Section:</span>
-        </div>
+        </div> */}
       </section>
     </main>
   )

@@ -1,106 +1,108 @@
 'use client'
-import { NavLinks, MobileLinks } from "@/constants";
-import { useState } from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
 
+import { NavLinks, MobileLinks } from '@/constants'
+import { useState } from 'react'
+import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 
 export default function HeaderMenu() {
+  const pathname = usePathname()
+  const [isMobileOpen, setIsMobileOpen] = useState(false)
 
-    const pathname = usePathname();
-    const [isMobileOpen, setIsMobileOpen] = useState(false)
+  const toggleMobileMenu = () => setIsMobileOpen((prev) => !prev)
 
-    const toggleMobileMenu = () => setIsMobileOpen((prev) => !prev)
+  return (
+    <header className="w-full border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex-shrink-0 flex items-center">
+            <svg
+              className="h-10 w-auto"
+              viewBox="0 0 500 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <text x="0" y="35" className="text-4xl font-bold fill-gray-900 dark:fill-white">
+                CRAFT
+              </text>
+              <text x="120" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-300">
+                | Gabion
+              </text>
+              <text x="0" y="60" className="text-xs fill-gray-700 dark:fill-gray-400">
+                Earth Elements. Talent. Time.
+              </text>
+            </svg>
+          </Link>
 
-    return (
-        <header className="w-full border-b">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
-            {/* Logo */}
-            <Link href="/" className="flex-shrink-0 flex items-center">
-                <svg
-                className="h-10 w-auto"
-                viewBox="0 0 500 100"
-                xmlns="http://www.w3.org/2000/svg"
-                >
-                <text x="0" y="35" className="text-4xl font-bold fill-gray-900">
-                    CRAFT
-                </text>
-                <text x="120" y="35" className="text-4xl font-bold fill-gray-500">
-                    | Gabion
-                </text>
-                <text x="0" y="60" className="text-xs fill-gray-700">
-                    Earth Elements. Talent. Time.
-                </text>
-                </svg>
-            </Link>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden sm:flex space-x-6 items-center">
-                {NavLinks.map((link: any) => (
-                <Link
-                    key={link.label}
-                    href={link.href}
-                    className={`text-sm font-medium ${
-                    pathname === link.href ? 'text-gray-900' : 'text-gray-500 hover:text-gray-800'
-                    }`}
-                >
-                    {link.label}
-                </Link>
-                ))}
-            </nav>
-
-            {/* Mobile Menu Button */}
-            <div className="sm:hidden">
-                <button
-                onClick={toggleMobileMenu}
-                type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                >
-                {isMobileOpen ? (
-                    <svg
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                ) : (
-                    <svg
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                    </svg>
-                )}
-                </button>
-            </div>
-            </div>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMobileOpen && (
-            <div className="sm:hidden px-4 pb-4">
-            {MobileLinks.map((menu: any) => (
-                <Link
-                key={menu.label}
-                href={menu.href}
-                className="block rounded-md py-2 px-3 text-base font-medium text-gray-700 hover:bg-gray-200"
-                >
-                {menu.label}
-                </Link>
+          {/* Desktop Navigation */}
+          <nav className="hidden sm:flex space-x-6 items-center">
+            {NavLinks.map((link: any) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className={`text-sm font-medium ${
+                  pathname === link.href
+                    ? 'text-gray-900 dark:text-white'
+                    : 'text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white'
+                }`}
+              >
+                {link.label}
+              </Link>
             ))}
-            </div>
-        )}
-        </header>
-    )
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <div className="sm:hidden">
+            <button
+              onClick={toggleMobileMenu}
+              type="button"
+              aria-label="Toggle mobile menu"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 dark:text-gray-200 hover:text-white hover:bg-gray-700 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            >
+              {isMobileOpen ? (
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isMobileOpen && (
+        <nav className="sm:hidden px-4 pb-4" role="menu">
+          {MobileLinks.map((menu: any) => (
+            <Link
+              key={menu.label}
+              href={menu.href}
+              className="block rounded-md py-2 px-3 text-base font-medium text-gray-700 hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-gray-700"
+            >
+              {menu.label}
+            </Link>
+          ))}
+        </nav>
+      )}
+    </header>
+  )
 }

@@ -1,6 +1,6 @@
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-white px-6 py-12 text-gray-800">
+    <main className="min-h-screen bg-white dark:bg-gray-900 px-6 py-12 text-gray-800 dark:text-gray-100">
 
       <h2 className="text-center text-lg font-semibold mb-12">
         Strength Meets Aesthetics – Custom Gabion Solutions for Every Need.
@@ -30,27 +30,27 @@ export default function ServicesPage() {
           },
         ].map((item, idx) => (
           <div key={idx} className="text-center">
-            <h3 className="font-medium text-base text-blue-600 mb-3">
+            <h3 className="font-medium text-base text-blue-600 dark:text-blue-400 mb-3">
               ◆ {item.title}
             </h3>
-            <div className="w-40 h-28 border rounded-lg mx-auto mb-3 flex items-center justify-center text-gray-500">
+            <div className="w-40 h-28 border border-gray-300 dark:border-gray-600 rounded-lg mx-auto mb-3 flex items-center justify-center text-gray-500 dark:text-gray-400">
               {item.imgLabel}
             </div>
-            <p className="text-sm text-gray-700">{item.desc}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300">{item.desc}</p>
           </div>
         ))}
       </section>
 
       {/* CTA Section */}
       <section className="mt-16 text-center">
-        <p className="mb-4 text-sm text-gray-600">calendly.com/craftgabion</p>
+        <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">calendly.com/craftgabion</p>
         <img
           src="/calendly_placeholder.png"
           alt="Calendly scheduling screenshot"
-          className="mx-auto w-72 rounded shadow"
+          className="mx-auto w-72 rounded shadow border border-gray-200 dark:border-gray-600"
         />
 
-        <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-700">
+        <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-700 dark:text-gray-300">
           <input type="checkbox" checked readOnly className="accent-green-600" />
           <span>CTA Section:</span>
         </div>

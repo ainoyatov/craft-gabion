@@ -1,23 +1,6 @@
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-white px-6 py-12 text-gray-800">
-      <header className="flex justify-between items-center mb-10 text-sm">
-        <h1 className="text-3xl font-bold">
-          <a href="/" className="hover:opacity-80 transition">
-            <span className="text-gray-900">CRAFT</span>{' '}
-            <span className="text-gray-500">| Gabion</span>
-            <div className="text-xs">Earth Elements. Talent. Time.</div>
-          </a>
-        </h1>
-        <nav className="space-x-4 text-right">
-          <a href="/services" className="font-medium hover:underline">
-            Services
-          </a>
-          <a href="/contact-us" className="hover:underline">
-            Contact Us
-          </a>
-        </nav>
-      </header>
 
       <h2 className="text-center text-lg font-semibold mb-12">
         Strength Meets Aesthetics – Custom Gabion Solutions for Every Need.

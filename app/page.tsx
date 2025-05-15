@@ -1,4 +1,4 @@
-// app/page.tsx
+
 export default function HomePage() {
   return (
     <div className="min-h-screen px-4 py-8 space-y-10 text-center text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900">

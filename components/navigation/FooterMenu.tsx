@@ -39,16 +39,16 @@ export default function Footer() {
                         preserveAspectRatio="xMinYMid meet"
                         xmlns="http://www.w3.org/2000/svg"
                     >
-                    <text x="0" y="35" className="text-4xl font-bold fill-gray-900 dark:fill-white">
+                    <text x="0" y="35" className="text-4xl font-bold fill-gray-900 dark:fill-gray-400">
                         CRAFT
                     </text>
-                    <text x="135" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-300">
+                    <text x="135" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-500">
                         |
                     </text>
-                    <text x="150" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-300">
+                    <text x="150" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-500">
                         Gabion
                     </text>
-                    <text x="0" y="60" className="text-xs fill-gray-700 dark:fill-gray-400">
+                    <text x="0" y="60" className="text-xs fill-gray-700 dark:fill-gray-900">
                         Earth Elements. Talent. Time.
                     </text>
                     </svg>

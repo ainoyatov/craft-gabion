@@ -24,22 +24,22 @@ export default function HeaderMenu() {
                         xmlns="http://www.w3.org/2000/svg"
                         >
                         {/* CRAFT */}
-                        <text x="0" y="35" className="text-4xl font-bold fill-gray-900 dark:fill-white">
+                        <text x="0" y="35" className="text-4xl font-bold fill-gray-900 dark:fill-gray-200">
                             CRAFT
                         </text>
 
                         {/* | (centered between) */}
-                        <text x="135" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-300">
+                        <text x="135" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-400">
                             |
                         </text>
 
                         {/* Gabion */}
-                        <text x="150" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-300">
+                        <text x="150" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-400">
                             Gabion
                         </text>
 
                         {/* Tagline */}
-                        <text x="0" y="60" className="text-xs fill-gray-700 dark:fill-gray-400">
+                        <text x="0" y="60" className="text-xs fill-gray-700 dark:fill-gray-200">
                             Earth Elements. Talent. Time.
                         </text>
                         </svg>

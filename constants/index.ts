@@ -25,7 +25,7 @@ export const FooterLinks = [
 ]
 
 export const MobileLinks = [
-    {href:"/home", label: "Home"},
+    {href:"/", label: "Home"},
     {href: "/services", label:"Services"},
     {href: "/gallery", label:"Gallery"},
     {href: "/contact-us", label:"Contact"},

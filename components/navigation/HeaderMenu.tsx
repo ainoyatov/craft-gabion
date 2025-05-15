@@ -103,15 +103,16 @@ export default function HeaderMenu() {
             {/* Mobile Navigation */}
             {isMobileOpen && (
                 <nav className="sm:hidden px-4 pb-4" role="menu">
-                {MobileLinks.map((menu: any) => (
-                    <Link
-                    key={menu.label}
-                    href={menu.href}
-                    className="block rounded-md py-2 px-3 text-base font-medium text-gray-700 hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-gray-700"
-                    >
-                    {menu.label}
-                    </Link>
-                ))}
+                    {MobileLinks.map((menu: any) => (
+                        <Link
+                            key={menu.label}
+                            href={menu.href}
+                            onClick={() => setIsMobileOpen(false)} // 👈 collapses menu
+                            className="block rounded-md py-2 px-3 text-base font-medium text-gray-700 hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-gray-700"
+                        >
+                            {menu.label}
+                        </Link>
+                        ))}
                 </nav>
             )}
         </header>

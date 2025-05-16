@@ -32,27 +32,57 @@ export default function Footer() {
 
             {/* Logo on the Right */}
             <div className="flex-shrink-0 mt-6 md:mt-0 max-w-sm overflow-hidden">
-                <Link href="/" className="flex items-center">
-                    <svg
-                        className="h-20 w-[300px] sm:w-[400px] md:w-[450px] max-w-full"
-                        viewBox="0 0 500 100"
-                        preserveAspectRatio="xMinYMid meet"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <text x="0" y="35" className="text-4xl font-bold fill-gray-900 dark:fill-gray-400">
-                        CRAFT
-                    </text>
-                    <text x="135" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-500">
-                        |
-                    </text>
-                    <text x="150" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-500">
-                        Gabion
-                    </text>
-                    <text x="0" y="60" className="text-xs fill-gray-700 dark:fill-gray-900">
-                        Earth Elements. Talent. Time.
-                    </text>
-                    </svg>
-                </Link>
+                <Link href="/" className="flex items-center max-w-full overflow-hidden">
+                        <svg
+                            className="h-10 w-full max-w-[180px]"
+                            viewBox="0 0 220 70"
+                            xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMinYMid meet"
+                        >
+                            {/* CRAFT */}
+                            <text
+                            x="0"
+                            y="30"
+                            fontSize="24"
+                            fontWeight="bold"
+                            className="fill-gray-900 dark:fill-gray-200"
+                            >
+                            CRAFT
+                            </text>
+
+                            {/* | */}
+                            <text
+                            x="80"
+                            y="30"
+                            fontSize="24"
+                            fontWeight="bold"
+                            className="fill-gray-500 dark:fill-gray-400"
+                            >
+                            |
+                            </text>
+
+                            {/* Gabion */}
+                            <text
+                            x="95"
+                            y="30"
+                            fontSize="24"
+                            fontWeight="bold"
+                            className="fill-gray-500 dark:fill-gray-400"
+                            >
+                            Gabion
+                            </text>
+
+                            {/* Tagline */}
+                            <text
+                            x="0"
+                            y="55"
+                            fontSize="10"
+                            className="fill-gray-700 dark:fill-gray-200"
+                            >
+                            Earth Elements. Talent. Time.
+                            </text>
+                        </svg>
+                    </Link>
             </div>
         </div>
 

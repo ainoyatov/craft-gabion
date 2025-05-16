@@ -17,33 +17,58 @@ export default function HeaderMenu() {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 justify-between">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center">
+                    <Link href="/" className="flex items-center max-w-full overflow-hidden">
                         <svg
-                        className="h-10 w-auto"
-                        viewBox="0 0 500 70"
-                        xmlns="http://www.w3.org/2000/svg"
+                            className="h-10 w-full max-w-[180px]"
+                            viewBox="0 0 220 70"
+                            xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMinYMid meet"
                         >
-                        {/* CRAFT */}
-                        <text x="0" y="35" className="text-4xl font-bold fill-gray-900 dark:fill-gray-200">
+                            {/* CRAFT */}
+                            <text
+                            x="0"
+                            y="30"
+                            fontSize="24"
+                            fontWeight="bold"
+                            className="fill-gray-900 dark:fill-gray-200"
+                            >
                             CRAFT
-                        </text>
+                            </text>
 
-                        {/* | (centered between) */}
-                        <text x="135" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-400">
+                            {/* | */}
+                            <text
+                            x="80"
+                            y="30"
+                            fontSize="24"
+                            fontWeight="bold"
+                            className="fill-gray-500 dark:fill-gray-400"
+                            >
                             |
-                        </text>
+                            </text>
 
-                        {/* Gabion */}
-                        <text x="150" y="35" className="text-4xl font-bold fill-gray-500 dark:fill-gray-400">
+                            {/* Gabion */}
+                            <text
+                            x="95"
+                            y="30"
+                            fontSize="24"
+                            fontWeight="bold"
+                            className="fill-gray-500 dark:fill-gray-400"
+                            >
                             Gabion
-                        </text>
+                            </text>
 
-                        {/* Tagline */}
-                        <text x="0" y="60" className="text-xs fill-gray-700 dark:fill-gray-200">
+                            {/* Tagline */}
+                            <text
+                            x="0"
+                            y="55"
+                            fontSize="10"
+                            className="fill-gray-700 dark:fill-gray-200"
+                            >
                             Earth Elements. Talent. Time.
-                        </text>
+                            </text>
                         </svg>
                     </Link>
+                    
 
                     {/* Desktop Navigation */}
                     <nav className="hidden sm:flex space-x-6 items-center">

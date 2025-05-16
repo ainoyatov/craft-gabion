@@ -1,3 +1,4 @@
+import FaqForm from "@/components/forms/FaqSection"
 
 export default function HomePage() {
   return (
@@ -67,11 +68,20 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* CTA */}
-      {/* <div className="flex items-start gap-2 max-w-xl mx-auto text-left">
-        <input type="checkbox" checked readOnly className="mt-1" />
-        <span className="text-gray-800 dark:text-gray-100">CTA Section:</span>
-      </div> */}
+      <div className="flex flex-col items-center md:items-start px-4">
+        <h3 className="w-full flex justify-center text-center font-semibold text-lg mt-6 mb-2 text-gray-900 dark:text-white">
+          FAQ
+        </h3>
+        <p className="w-full flex justify-center leading-loose p-2 py-4 mb-4 text-center">
+          Explore our frequently asked questions to learn more about gabion design, installation, durability, and what to expect when working with us.
+        </p>
+
+        {/* Center the form within its column */}
+        <div className="w-full flex justify-center">
+          <FaqForm />
+        </div>
+      </div>
+
     </div>
   )
 }

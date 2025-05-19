@@ -15,7 +15,6 @@ export default function HomePage() {
       <p className="max-w-prose mx-auto px-2 text-gray-700 dark:text-gray-300 break-words">
         Our philosophy is simple: Combine earth elements, experienced craftsmen with the right amount of time and you will produce quality gabions. Never compromise in these areas and you will be able to replicate great work consistently.
       </p>
-
       {/* Images */}
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
         {['Pic 1', 'Pic 2', 'Pic 3'].map((label, i) => (

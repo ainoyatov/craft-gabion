@@ -1,16 +1,16 @@
 'use client'
 
 import FaqForm from "@/components/forms/FaqSection"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen px-2 sm:px-4 py-8 space-y-10 text-center text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 overflow-x-hidden">
       
       {/* Hi Res Pano */}
-      <div className="border border-gray-300 dark:border-gray-600 rounded-lg py-10 text-lg font-medium">
-        Hi Res Pic Pano
+      <div className="bg-[url('/craft_gabion.png')] bg-cover bg-center h-[300px] md:h-[500px]  ">
       </div>
-
+      
       {/* Philosophy Section */}
       <p className="max-w-prose mx-auto px-2 text-gray-700 dark:text-gray-300 break-words">
         Our philosophy is simple: Combine earth elements, experienced craftsmen with the right amount of time and you will produce quality gabions. Never compromise in these areas and you will be able to replicate great work consistently.

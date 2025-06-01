@@ -37,7 +37,7 @@ export default function HomePage() {
       </div>
 
       {/* Testimonials */}
-      <div className="text-left max-w-prose mx-auto px-2">
+      {/* <div className="text-left max-w-prose mx-auto px-2">
         <div className="flex items-start gap-2 flex-wrap">
           <input type="checkbox" checked readOnly className="mt-1" />
           <div>
@@ -47,7 +47,7 @@ export default function HomePage() {
             </em>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Our Values */}
       <div className="max-w-prose mx-auto text-left px-2">

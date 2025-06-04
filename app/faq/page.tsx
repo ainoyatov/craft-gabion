@@ -4,6 +4,7 @@ const FAQPage = () => {
   return (
     <div>
       <div className="flex flex-col items-center">
+        
         <h3 className="w-full flex justify-center text-center font-semibold text-lg mt-6 mb-2 text-gray-900 dark:text-white">
           FAQ
         </h3>

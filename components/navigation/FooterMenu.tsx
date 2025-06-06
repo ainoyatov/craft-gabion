@@ -41,43 +41,43 @@ export default function Footer() {
                         >
                             {/* CRAFT */}
                             <text
-                            x="0"
-                            y="30"
-                            fontSize="24"
-                            fontWeight="bold"
-                            className="fill-gray-900 dark:fill-gray-200"
+                              x="0"
+                              y="30"
+                              fontSize="24"
+                              fontWeight="bold"
+                              className="fill-gray-900 dark:fill-gray-200"
                             >
                             CRAFT
                             </text>
 
                             {/* | */}
                             <text
-                            x="80"
-                            y="30"
-                            fontSize="24"
-                            fontWeight="bold"
-                            className="fill-gray-500 dark:fill-gray-400"
+                              x="80"
+                              y="30"
+                              fontSize="24"
+                              fontWeight="bold"
+                              className="fill-gray-500 dark:fill-gray-400"
                             >
                             |
                             </text>
 
                             {/* Gabion */}
                             <text
-                            x="95"
-                            y="30"
-                            fontSize="24"
-                            fontWeight="bold"
-                            className="fill-gray-500 dark:fill-gray-400"
+                              x="95"
+                              y="30"
+                              fontSize="24"
+                              fontWeight="bold"
+                              className="fill-gray-500 dark:fill-gray-400"
                             >
                             Gabion
                             </text>
 
                             {/* Tagline */}
                             <text
-                            x="0"
-                            y="55"
-                            fontSize="10"
-                            className="fill-gray-700 dark:fill-gray-200"
+                              x="0"
+                              y="55"
+                              fontSize="10"
+                              className="fill-gray-700 dark:fill-gray-200"
                             >
                             Earth Elements. Talent. Time.
                             </text>

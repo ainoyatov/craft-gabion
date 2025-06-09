@@ -1,9 +1,13 @@
-import React from 'react'
+import CalendlyBooking from '@/components/calendars/CalendlyBooking'
+import { Suspense } from 'react'
 
-const AppointmentPage = () => {
+
+const Appointment = () => {
   return (
-    <div>AppointmentPage</div>
+    <Suspense>
+      <CalendlyBooking />
+    </Suspense>
   )
 }
 
-export default AppointmentPage
+export default Appointment

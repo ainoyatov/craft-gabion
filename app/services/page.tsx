@@ -41,19 +41,16 @@ export default function ServicesPage() {
         ))}
       </section>
 
-      {/* CTA Section */}
+      {/* Calendly */}
       <section className="mt-16 text-center">
-        <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">calendly.com/craftgabion</p>
-        <img
-          src="/calendly_placeholder.png"
-          alt="Calendly scheduling screenshot"
-          className="mx-auto w-72 rounded shadow border border-gray-200 dark:border-gray-600"
-        />
-
-        {/* <div className="mt-6 flex items-center justify-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-          <input type="checkbox" checked readOnly className="accent-green-600" />
-          <span>CTA Section:</span>
-        </div> */}
+        <div className="text-center px-2">
+          <h3 className="text-center font-semibold text-lg m-4 text-gray-900 dark:text-white">
+            Schedule Appointment
+          </h3>
+          <a href="/appointment" className="inline-block border border-gray-300 dark:border-gray-600 rounded shadow max-w-full overflow-hidden">
+            <img src="/calendly_placeholder.png" alt="Calendly Screenshot" className="w-full max-w-xs h-auto" />
+          </a>
+        </div>
       </section>
     </main>
   )

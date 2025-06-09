@@ -60,21 +60,24 @@ export default function HomePage() {
           <li>We bid jobs within 49-hours. Need the extra 1 hour.</li>
         </ol>
       </div>
+      
 
       {/* Calendly */}
       <div className="text-center px-2">
-        <p className="mb-2 text-gray-700 dark:text-gray-300 text-sm break-words">calendly.com/craftgabion</p>
-        <div className="inline-block border border-gray-300 dark:border-gray-600 rounded shadow max-w-full overflow-hidden">
+        <h3 className="text-center font-semibold text-lg m-4 text-gray-900 dark:text-white">
+          Schedule Appointment
+        </h3>
+        <a href="/appointment" className="inline-block border border-gray-300 dark:border-gray-600 rounded shadow max-w-full overflow-hidden">
           <img src="/calendly_placeholder.png" alt="Calendly Screenshot" className="w-full max-w-xs h-auto" />
-        </div>
+        </a>
       </div>
 
       {/* FAQ Section */}
       <div className="flex flex-col items-center md:items-start px-2">
-        <h3 className="w-full flex justify-center text-center font-semibold text-lg mt-6 mb-2 text-gray-900 dark:text-white">
+        <h3 className="w-full flex justify-center text-center font-semibold text-lg m-4 mb-2 text-gray-900 dark:text-white">
           FAQ
         </h3>
-        <p className="w-full flex justify-center leading-loose p-2 py-4 mb-4 text-center text-sm break-words">
+        <p className="w-full flex justify-center leading-loose p-2  mb-4 text-center text-sm break-words">
           Explore our frequently asked questions to learn more about gabion design, installation, durability, and what to expect when working with us.
         </p>
 

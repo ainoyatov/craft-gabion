@@ -10,7 +10,7 @@ export async function POST(req: Request) {
   try {
     const data = await resend.emails.send({
       from: 'Contact Form <thad@craftgabion.com>',
-      to: ['akmal.inoyatov@gmail.com'], // Replace with your actual email
+      to: ['info@craftgabion.com'], // Replace with your actual email
       subject: 'New Client from Craft Gabion',
       html: `
         <div style="font-family: sans-serif; line-height: 1.5;">

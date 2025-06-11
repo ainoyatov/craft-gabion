@@ -74,13 +74,13 @@ const ContactForm = () => {
                         <input type="text" name="phone" placeholder='Phone' className="w-full p-3 rounded-md border border-gray-300 text-black placeholder-gray-600 dark:placeholder-gray-300" />
                         <textarea name="message" placeholder='Message' className="w-full p-3 rounded-md border border-gray-300 text-black placeholder-gray-600 h-24 resize-none dark:placeholder-gray-300" />
 
-                        {/* <div className="mt-4">
+                        <div className="mt-4">
                             <ReCAPTCHA 
                                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA!}
                                 className="w-full mt-4"
                                 onChange={setCaptcha}
                             />
-                        </div> */}
+                        </div>
 
                         <div className="py-2">
                             <button

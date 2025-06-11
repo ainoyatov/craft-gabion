@@ -9,12 +9,12 @@ export async function POST(req: Request) {
 
   try {
     const data = await resend.emails.send({
-      from: 'Contact Form thad@craftgabion.com',
-      to: ['info@gravityelements.com'], // Replace with your actual email
-      subject: 'New Contact Craft Gabion',
+      from: 'Contact Form <thad@craftgabion.com>',
+      to: ['akmal.inoyatov@gmail.com'], // Replace with your actual email
+      subject: 'New Client from Craft Gabion',
       html: `
         <div style="font-family: sans-serif; line-height: 1.5;">
-          <h2>New Contact Form Submission</h2>
+          <h2>New Client Form Submission</h2>
           <p><strong>Name:</strong> ${full_name}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Phone:</strong> ${phone}</p>

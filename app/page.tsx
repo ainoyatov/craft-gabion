@@ -20,7 +20,7 @@ export default function HomePage() {
 
       {/* Images */}
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4">
-        {['philosophy_1.png', 'philosophy_2.png', 'philosophy_3.png'].map((src, i) => (
+        {['project_1.png', 'project_3.png', 'project_4.png'].map((src, i) => (
           <img
             key={i}
             src={`/${src}`}

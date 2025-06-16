@@ -8,9 +8,11 @@ export default function CommercialRetainingWallPage() {
 
         <h1 className="text-2xl font-semibold text-center">Commercial Retaining Wall</h1>
 
-        <div className="h-48 bg-gray-100 dark:bg-gray-800 rounded flex items-center justify-center text-gray-400">
-          Image Placeholder
-        </div>
+        <img
+          src="/main_project_4.png"
+          alt="Modern Stone Entryway"
+          className="w-full rounded border border-gray-200 dark:border-gray-700"
+        />
 
         <p>
           This large-scale gabion retaining wall was built to stabilize a sloped commercial site while meeting strict engineering specs. The wall needed to hold back over 6 feet of grade across a 60-foot span.

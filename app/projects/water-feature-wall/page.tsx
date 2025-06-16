@@ -8,9 +8,11 @@ export default function WaterFeatureWallPage() {
 
         <h1 className="text-2xl font-semibold text-center">Water Feature Gabion Wall</h1>
 
-        <div className="h-48 bg-gray-100 dark:bg-gray-800 rounded flex items-center justify-center text-gray-400">
-          Image Placeholder
-        </div>
+        <img
+          src="/main_project_2.png"
+          alt="Modern Stone Entryway"
+          className="w-full rounded border border-gray-200 dark:border-gray-700"
+        />
 
         <p>
           This project combined the organic texture of gabions with the movement and sound of water. The homeowner envisioned a tranquil garden space where rock and water could interact in a visually striking way.

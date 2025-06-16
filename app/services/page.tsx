@@ -10,32 +10,35 @@ export default function ServicesPage() {
         {[
           {
             title: 'Custom Gabion Design',
-            imgLabel: 'Pic 1',
+            imgSrc: '/craft_gabion_thumbnails_1.png',
             desc: 'We tailor gabion structures to meet your aesthetic and functional goals, whether it’s for landscape art, water features, or custom architectural accents.',
           },
           {
             title: 'Fencing & Enclosures',
-            imgLabel: 'Pic 2',
+            imgSrc: '/craft_gabion_thumbnails_2.png',
             desc: 'Gabion fencing offers privacy, durability, and a natural look using rock or recycled materials—ideal for residential and commercial boundaries.',
           },
           {
             title: 'Retaining Walls',
-            imgLabel: 'Pic 3',
+            imgSrc: '/craft_gabion_thumbnails_3.png',
             desc: 'Our gabion retaining walls provide strong, flexible support for sloped terrain, helping prevent erosion while blending into natural surroundings.',
           },
           {
             title: 'Large-Scale Commercial Gabions',
-            imgLabel: 'Pic 4',
+            imgSrc: '/craft_gabion_thumbnails_4.png',
             desc: 'Engineered for strength and scalability, these gabions serve infrastructure, highways, flood control, and industrial projects that demand rugged performance.',
           },
         ].map((item, idx) => (
           <div key={idx} className="text-center">
-            <h3 className="font-medium text-base text-blue-600 dark:text-blue-400 mb-3">
-              ◆ {item.title}
+            <h3 className="text-lg font-semibold text-blue-700 dark:text-blue-400 mb-2 tracking-tight">
+              <span className="mr-1 text-blue-500"></span>
+              {item.title}
             </h3>
-            <div className="w-40 h-28 border border-gray-300 dark:border-gray-600 rounded-lg mx-auto mb-3 flex items-center justify-center text-gray-500 dark:text-gray-400">
-              {item.imgLabel}
-            </div>
+            <img
+              src={item.imgSrc}
+              alt={item.title}
+              className="w-40 h-28 object-cover border border-gray-300 dark:border-gray-600 rounded-lg mx-auto mb-3"
+            />
             <p className="text-sm text-gray-700 dark:text-gray-300">{item.desc}</p>
           </div>
         ))}

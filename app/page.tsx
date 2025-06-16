@@ -11,21 +11,25 @@ export default function HomePage() {
       <div className="bg-[url('/craft_gabion.png')] bg-cover bg-center h-[300px] md:h-[500px]"></div>
       
       {/* Philosophy Section */}
-      <h2 className="font-semibold text-2xl mb-2 text-gray-900 dark:text-white">Our philosophy</h2>
+      <h2 className="font-semibold text-2xl mb-2 text-gray-900 dark:text-white">
+        Our philosophy
+      </h2>
       <p className="max-w-prose mx-auto px-2 text-gray-700 dark:text-gray-300 break-words">
         Combine earth elements, experienced craftsmen with the right amount of time and you will produce quality gabions. Never compromise in these areas and you will be able to replicate great work consistently.
       </p>
+
       {/* Images */}
-      <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-        {['Pic 1', 'Pic 2', 'Pic 3'].map((label, i) => (
-          <div
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4">
+        {['philosophy_1.png', 'philosophy_2.png', 'philosophy_3.png'].map((src, i) => (
+          <img
             key={i}
-            className="w-20 sm:w-24 h-20 sm:h-24 border border-gray-300 dark:border-gray-600 rounded-lg flex items-center justify-center text-gray-800 dark:text-gray-100 text-xs"
-          >
-            {label}
-          </div>
+            src={`/${src}`}
+            alt={`Gabion philosophy ${i + 1}`}
+            className="w-20 sm:w-24 h-20 sm:h-24 object-cover border border-gray-300 dark:border-gray-600 rounded-lg"
+          />
         ))}
       </div>
+      
 
       {/* Why Section */}
       <div className="px-2">

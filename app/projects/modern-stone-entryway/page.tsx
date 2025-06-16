@@ -8,9 +8,11 @@ export default function ModernStoneEntrywayPage() {
 
         <h1 className="text-2xl font-semibold text-center">Modern Stone Entryway</h1>
 
-        <div className="h-48 bg-gray-100 dark:bg-gray-800 rounded flex items-center justify-center text-gray-400">
-          Image Placeholder
-        </div>
+        <img
+          src="/main_project_1.png"
+          alt="Modern Stone Entryway"
+          className="w-full rounded border border-gray-200 dark:border-gray-700"
+        />
 
         <p>
           This gabion entryway was designed for a modern desert home with clean lines and natural finishes. The client wanted a structure that added architectural interest and blended with their xeriscaped surroundings.

@@ -4,9 +4,13 @@ import { galleryData } from '@/components/gallery/galleryData'
 export default function GalleryPage() {
   return (
     <main id="main_gallery" className="min-h-screen bg-white dark:bg-gray-900 px-6 py-12 text-gray-800 dark:text-gray-100">
-      <h2 className="text-center text-lg font-semibold mb-12">
+      <h2 className="text-center text-lg font-semibold mb-6">
         Gabion Work in Action – Explore Our Craft
       </h2>
+
+      <p className="max-w-3xl mx-auto text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-12 text-center">
+        Every project in our gallery tells a story of precision, patience, and passion. At CRAFT Gabion, we approach each structure not only as a functional solution but as a canvas for natural materials. Whether it’s a modern stone entryway, a tranquil water feature, or a robust retaining wall, our gabions are handcrafted to meet both aesthetic and structural needs. Explore the gallery to see how rock, steel, and design come together to create long-lasting installations that blend with nature and elevate architectural spaces. From small residential accents to large-scale commercial applications, this is where quality craftsmanship meets intentional design.
+      </p>
 
       <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {galleryData.map((item) => (
